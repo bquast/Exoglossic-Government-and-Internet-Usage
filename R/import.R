@@ -21,9 +21,10 @@ uselang <- gs_read(ss = gsloc, range = 'A1:AF215')
 names(reggrow)[1] <- 'region'
 reggrow <- gather(reggrow, key = 'region')
 names(reggrow)[2] <- 'year'
+names(reggrow)[3] <- 'usage'
 reggrow$year <- sub('X', '', reggrow$year)
-reggrow$value <- sub('%', '', reggrow$value)
-reggrow$value <- as.numeric(reggrow$value) /100
+reggrow$usage <- sub('%', '', reggrow$usage)
+reggrow$usage <- as.numeric(reggrow$usage) /100
 
 
 # subset relevant data

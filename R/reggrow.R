@@ -12,4 +12,4 @@ load(file = 'data/reggrow.RData')
 
 
 # plot
-ggplot(data = reggrow, aes(x = year, y = value, group=region, colour=region)) + geom_line()
+ggplot(data = reggrow, aes(x = year, y = usage, group=region, colour=region)) + geom_line()
