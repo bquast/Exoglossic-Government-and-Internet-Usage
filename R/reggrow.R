@@ -5,8 +5,7 @@
 
 # load libraries
 library(ggplot2)
-library(reshape2)
-library(dplyr)
+
 
 # load data
 load(file = 'data/reggrow.RData')

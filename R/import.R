@@ -6,6 +6,7 @@
 # libraries
 library(googlesheets)
 library(dplyr)
+library(reshape2)
 
 
 # download data
@@ -23,8 +24,6 @@ names(reggrow)[2] <- 'year'
 reggrow$year <- sub('X', '', reggrow$year)
 reggrow$value <- sub('%', '', reggrow$value)
 reggrow$value <- as.numeric(reggrow$value) /100
-
-
 
 
 # subset relevant data
